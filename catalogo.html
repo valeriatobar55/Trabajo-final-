@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Consejos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Catálogo de Consejos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="compartir.html">Compartir</a></li>
+        <li><a href="foro.html">Foro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Buscar Consejos</h2>
+      <form id="form-buscar" onsubmit="return false;">
+        <label for="busqueda-input">Buscar:</label>
+        <input type="text" id="busqueda-input" placeholder="Busca tu consejo...">
+        <label for="categoria-select">Categoría:</label>
+        <select id="categoria-select">
+          <option value="">Todas</option>
+          <option value="cocina">Cocina</option>
+          <option value="salud">Salud</option>
+          <option value="hogar">Hogar</option>
+          <option value="jardinería">Jardinería</option>
+        </select>
+      </form>
+    </section>
+
+    <section id="lista-consejos">
+      <h2>Resultados</h2>
+      <div class="card-container" id="consejos-lista"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Consejos de la Abuela</p>
+  </footer>
+
+  <script src="js/catalogo.js"></script>
+</body>
+</html>

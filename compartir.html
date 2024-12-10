@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compartir Consejos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Compartir Consejo</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="compartir.html">Compartir</a></li>
+        <li><a href="foro.html">Foro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="compartir-consejo">
+      <h2>Comparte un Consejo</h2>
+      <form id="form-compartir">
+        <label for="consejo-texto">Consejo:</label>
+        <textarea id="consejo-texto" name="texto" required></textarea>
+        <label for="categoria-consejo">Categoría:</label>
+        <select id="categoria-consejo" name="categoria" required>
+          <option value="">Selecciona una categoría</option>
+          <option value="cocina">Cocina</option>
+          <option value="hogar">Hogar</option>
+          <option value="jardinería">Jardinería</option>
+          <option value="salud">Salud</option>
+        </select>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="consejos-enviados">
+      <h2>Consejos Enviados</h2>
+      <div class="card-container" id="lista-consejos-enviados">
+        <div class="card">
+          
+        </div>
+      </div>
+    </section>
+    
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Consejos de la Abuela</p>
+  </footer>
+
+  <script src="js/compartir.js"></script>
+</body>
+</html>

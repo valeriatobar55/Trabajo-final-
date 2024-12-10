@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foro de Discusión</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Foro de Discusión</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="compartir.html">Compartir</a></li>
+        <li><a href="foro.html" class="active">Foro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="foro-formulario">
+      <h2>Participa en el Foro</h2>
+      <form id="form-comentario">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required placeholder="Ingresa tu nombre">
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" required placeholder="Escribe tu comentario aquí"></textarea>
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </section>
+
+    <section class="foro-comentarios">
+      <h2>Comentarios</h2>
+      <ul id="lista-comentarios" class="comentarios-container"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Consejos de la Abuela</p>
+  </footer>
+
+  <script src="js/foro.js"></script>
+</body>
+</html>
